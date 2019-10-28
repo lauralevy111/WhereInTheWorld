@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">WhereInTheWorld</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="to_map_button">lets see the map!</string>
+    <string name="to_settings_button">edit your settings</string>
+
 </resources>
