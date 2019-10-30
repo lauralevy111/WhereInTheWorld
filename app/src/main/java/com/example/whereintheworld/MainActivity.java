@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     public Button toMapButton;
+    public Button toSettingsButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intent = new Intent (getApplicationContext(),MapsActivity.class);
+                //
+                startActivity(intent);
+            }
+        });
+        toSettingsButton = findViewById(R.id.toSettingsActivityButton);
+        toSettingsButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent (getApplicationContext(),SettingsActivity.class);
                 //
                 startActivity(intent);
             }
