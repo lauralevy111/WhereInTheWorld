@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                Intent intent = new Intent (getApplicationContext(),SettingsActivity.class);
+                Intent settingsIntent = new Intent (getApplicationContext(),SettingsActivity.class);
                 //
-                startActivity(intent);
+                startActivity(settingsIntent);
             }
         });
     }
