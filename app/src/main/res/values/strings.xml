@@ -8,6 +8,8 @@
     <string name="to_map_button">lets see the map!</string>
     <string name="to_settings_button">edit your settings</string>
 
+    <string name="toast_test_button_string">test</string>
+
     <string name="settings_title_text">map settings</string>
     <string name="bathroom_switch_text">show bathrooms</string>
     <string name="busStation_switch_text">show bus stations</string>
@@ -15,5 +17,6 @@
     <string name="shelter_switch_text">show food shelters</string>
 
     <string name="apply_button_string">Apply</string>
+
 
 </resources>

@@ -8,12 +8,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.Serializable;
-
 public class MainActivity extends AppCompatActivity {
 
     public Button toMapButton;
     public Button toSettingsButton;
+
+    public Button toastTestButton;
 
     private String preferenceToast ="err";
     private boolean[] prefs;
@@ -44,21 +44,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        //this code takes the boolean array from the intent if you've gone from settings back to main hello yes chachacha.
         Intent toMainIntent = getIntent();
         if(toMainIntent.getExtras()!=null){
             preferenceToast="";
-            Serializable series = toMainIntent.getBooleanArrayExtra("preference");
+            boolean[]preference = toMainIntent.getBooleanArrayExtra("preference");
             //for(boolean b :series){
-            /*for(int i = 0; i<series.)
-                preferenceToast+="b\n";
-                Toast.makeText(getApplicationContext(),
-                        preferenceToast,
-                        Toast.LENGTH_SHORT).show();
-            }*///not done
+            for(boolean item : preference){
+                preferenceToast+=item;
+                preferenceToast+="\n";
+            }
             Toast.makeText(getApplicationContext(),
                     preferenceToast,
                     Toast.LENGTH_SHORT).show();
+
+
+            toastTestButton = findViewById(R.id.toMapActivityButton);
+            toastTestButton.setOnClickListener(new View.OnClickListener()
+            {
+                public void onClick(View v)
+                {
+                    Toast.makeText(getApplicationContext(),
+                            preferenceToast,
+                            Toast.LENGTH_SHORT).show();
+
+                }
+            });
         }
+
+
     }
 }
