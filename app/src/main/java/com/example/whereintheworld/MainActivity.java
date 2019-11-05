@@ -4,13 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity {
 
     public Button toMapButton;
     public Button toSettingsButton;
+
+    private String preferenceToast ="err";
+    private boolean[] prefs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,5 +43,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(settingsIntent);
             }
         });
+
+
+        Intent toMainIntent = getIntent();
+        if(toMainIntent.getExtras()!=null){
+            preferenceToast="";
+            Serializable series = toMainIntent.getBooleanArrayExtra("preference");
+            //for(boolean b :series){
+            /*for(int i = 0; i<series.)
+                preferenceToast+="b\n";
+                Toast.makeText(getApplicationContext(),
+                        preferenceToast,
+                        Toast.LENGTH_SHORT).show();
+            }*///not done
+            Toast.makeText(getApplicationContext(),
+                    preferenceToast,
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 }

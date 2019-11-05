@@ -14,7 +14,6 @@
     <string name="foodKitchen_switch_text">show food kitchens</string>
     <string name="shelter_switch_text">show food shelters</string>
 
-
-
+    <string name="apply_button_string">Apply</string>
 
 </resources>
