@@ -54,6 +54,9 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //TODO: send a locationid with the preferences,
+        // TODO: so we can create a marker for a location the user sets
+        //  TODO: and then make the map bring that up
 
                 /*toSettingsButton.setOnClickListener(new View.OnClickListener()
         {

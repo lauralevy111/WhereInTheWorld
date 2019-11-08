@@ -6,12 +6,24 @@ public class MapPreference {
     public boolean foodKitchen;
     public boolean shelter;
 
-    public MapPreference(boolean bathroom, boolean foodKitchen, boolean shelter) {
-        this.bathroom = bathroom;
+    public int locationid;
+
+    public MapPreference(/*boolean bathroom, boolean foodKitchen, boolean shelter*/int locationid) {
+        /*this.bathroom = bathroom;
         this.foodKitchen = foodKitchen;
-        this.shelter = shelter;
+        this.shelter = shelter;*/
+        this.locationid=locationid;
 
     }
+
+    public void setLocationid(int locationid){
+        this.locationid=locationid;
+    }
+    public int getLocationid(){
+        return locationid;
+    }
+
+    /*
 
     public void setBathroom(boolean bathroom) {
         this.bathroom = bathroom;
@@ -22,5 +34,7 @@ public class MapPreference {
     public void setShelter(boolean shelter){
         this.shelter = shelter;
     }
+
+     */
 
 }
