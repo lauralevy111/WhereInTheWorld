@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Button toMapButton;
     public Button toSettingsButton;
+    public Button toSummaryButton;
 
     public Button toastTestButton;
 
@@ -64,6 +65,17 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),
                         preferenceToast,
                         Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        toSummaryButton = findViewById(R.id.summaryButton);
+        toSummaryButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent toSummaryIntent= new Intent(getApplicationContext(), SummaryActivity.class);
+                startActivity(toSummaryIntent);
 
             }
         });

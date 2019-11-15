@@ -18,5 +18,7 @@
 
     <string name="apply_button_string">Apply</string>
 
+    <string name="summary_button_string">Summary</string>
+
 
 </resources>

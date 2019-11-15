@@ -20,4 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/toast_test_button_string" />
+    <Button
+        android:id="@+id/summaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/summary_button_string" />
 </LinearLayout>
