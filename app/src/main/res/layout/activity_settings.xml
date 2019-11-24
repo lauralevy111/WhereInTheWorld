@@ -66,6 +66,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shelter_switch" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pinkclouds" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
