@@ -23,7 +23,7 @@ public class MapPreference {
         return locationid;
     }
 
-    /*
+
 
     public void setBathroom(boolean bathroom) {
         this.bathroom = bathroom;
@@ -35,6 +35,16 @@ public class MapPreference {
         this.shelter = shelter;
     }
 
-     */
+    public int getBathroom(){
+        int bathroomId=0;
+        return bathroomId;
+    }
+    public int getFoodKitchen(){
+        int foodKitchenId=0;
+        return foodKitchenId;
+    }public int getShelter(){
+        int shelterId=0;
+        return shelterId;
+    }
 
 }

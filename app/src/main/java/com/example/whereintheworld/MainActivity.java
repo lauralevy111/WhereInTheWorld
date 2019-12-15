@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         toSettingsButton = findViewById(R.id.toSettingsActivityButton);
         toSettingsButton.setOnClickListener(new View.OnClickListener()
         {
