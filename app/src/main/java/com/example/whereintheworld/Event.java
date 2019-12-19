@@ -13,4 +13,11 @@ public class Event {
         this.name = name;
         this.date = date;
     }
+
+    public void setHub(String hubName, int mylong, int mylat){
+        hub = new Hub(hubName, mylong, mylat);
+
+    }
+
+    public void setAddress(String newAddress){ address= newAddress;}
 }
