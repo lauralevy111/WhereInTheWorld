@@ -8,14 +8,19 @@ public class Group {
 
     private ArrayList<User> members;
 
-    public Group(){
+    public Group() {
 
     }
 
-    public void setBusinessUser(BusinessUser businessUser){
+    public void setBusinessUser(BusinessUser businessUser) {
         this.businessUser = businessUser;
     }
-    public void setMembers(ArrayList<User> members){
+
+    public void setMembers(ArrayList<User> members) {
         this.members = members;
+    }
+
+    public void addMember(User newMember) {
+        members.add(newMember);
     }
 }
