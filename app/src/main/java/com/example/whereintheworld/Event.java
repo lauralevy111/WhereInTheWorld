@@ -1,13 +1,18 @@
 package com.example.whereintheworld;
 
 import java.sql.Date;
+import java.util.ArrayList;
 
 public class Event {
 
-    public Hub hub;
+    private Hub hub;
     public String name;
-    public Date date;
-    public String address;
+    private Date date;
+    private String address;
+
+    private ArrayList<User> attendees;
+
+    private Double admissionPrice;
 
     public Event(String name, Date date){
         this.name = name;
@@ -20,4 +25,16 @@ public class Event {
     }
 
     public void setAddress(String newAddress){ address= newAddress;}
+
+    public void addAttendee(User attendee){
+        attendees.add(attendee);
+    }
+    public void chargeAdmission(){
+        for(User attendee: attendees){
+            attendee.bill(admissionPrice);
+            if(attendee.getInvoice()<0){
+                System.out.println("attendee: "+attendee.getName()+" aint got enough money to come to this event ("+name+") lol srry bb");
+            }
+        }
+    }
 }
