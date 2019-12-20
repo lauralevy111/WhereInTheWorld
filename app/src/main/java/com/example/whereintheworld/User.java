@@ -2,7 +2,7 @@ package com.example.whereintheworld;
 
 public class User {
 
-    private String name;
+    public String name;
     private int id;
     private String email;
 
@@ -14,7 +14,7 @@ public class User {
         email=newEmail;
     }
 
-    public void bill(double amount) {
+    private void bill(double amount) {
         invoice += amount;
         System.out.println("pls pay us ? this amount : "+invoice+amount);
 
