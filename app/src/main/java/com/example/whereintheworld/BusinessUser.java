@@ -7,4 +7,6 @@ public class BusinessUser extends User{
     public BusinessUser(String name, String email, int businessID){
         super(name, email);
     }
+
+
 }
