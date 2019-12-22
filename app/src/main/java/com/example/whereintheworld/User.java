@@ -30,6 +30,8 @@ public class User {
     }
 
     public String getName(){
+        System.out.println("name : "+name);
+
         return name;
     }
 }
