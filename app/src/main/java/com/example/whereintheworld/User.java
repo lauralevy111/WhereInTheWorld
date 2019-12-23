@@ -30,7 +30,7 @@ public class User {
     }
 
     public String getName(){
-        System.out.println("name : "+name);
+        System.out.println("name : "+name.toUpperCase());
 
         return name;
     }
