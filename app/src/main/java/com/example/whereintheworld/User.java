@@ -14,11 +14,16 @@ public class User {
         email=newEmail;
     }
 
-    private void bill(double amount) {
+    public void bill(double amount) {
         invoice += amount;
         System.out.println("pls pay us ? this amount : "+invoice+amount);
 
     }
+    public void reinburse(double amount){
+        invoice -= amount;
+        System.out.println("pls accept this reinubrsement of amount : "+invoice+amount);
+    }
+
 
     public void receivePayment(double amount){
         invoice -= amount;
@@ -31,7 +36,6 @@ public class User {
 
     public String getName(){
         System.out.println("name : "+name.toLowerCase());
-        System.out.println("Ho ho ho merry xmas!");
 
         return name;
     }

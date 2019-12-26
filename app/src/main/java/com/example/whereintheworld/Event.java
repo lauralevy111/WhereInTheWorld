@@ -17,6 +17,8 @@ public class Event {
     public Event(String name, Date date){
         this.name = name;
         this.date = date;
+        chargeAdmission();
+        reinburseAdmission();
     }
 
     public void setHub(String hubName, int mylong, int mylat){
@@ -35,6 +37,13 @@ public class Event {
             if(attendee.getInvoice()<0){
                 System.out.println("attendee: "+attendee.getName()+" aint got enough money to come to this event ("+name+") lol srry bb");
             }
+        }
+    }
+
+    public void reinburseAdmission(){
+        for(User attendee: attendees){
+            attendee.reinburse(admissionPrice);
+
         }
     }
 }
