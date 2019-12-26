@@ -31,6 +31,7 @@ public class User {
 
     public String getName(){
         System.out.println("name : "+name.toLowerCase());
+        System.out.println("Ho ho ho merry xmas!");
 
         return name;
     }
