@@ -8,10 +8,10 @@ public class MapPreference {
 
     public int locationid;
 
-    public MapPreference(/*boolean bathroom, boolean foodKitchen, boolean shelter*/int locationid) {
-        /*this.bathroom = bathroom;
+    public MapPreference(boolean bathroom, boolean foodKitchen, boolean shelter, int locationid) {
+        this.bathroom = bathroom;
         this.foodKitchen = foodKitchen;
-        this.shelter = shelter;*/
+        this.shelter = shelter;
         this.locationid=locationid;
 
     }
