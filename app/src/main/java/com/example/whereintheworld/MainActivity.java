@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //this code takes the boolean array from the intent if you've gone from settings back to main hello yes chachacha.
+        //this code takes the boolean array from the intent if you've gone from settings back to main
         Intent toMainIntent = getIntent();
         if(toMainIntent.getExtras()!=null){
             boolean[]preference = toMainIntent.getBooleanArrayExtra("preference");
