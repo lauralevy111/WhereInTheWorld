@@ -14,12 +14,17 @@ public class Hub {
         this.active = active;
     }
 
-    public double getDistance(int mylong, int mylat){
+    public double getDistance(int mylong, int mylat) {
         double distance = 0;
-        int difflong = mylong-longitude;
-        int difflat = mylat-latitude;
+        int difflong = mylong - longitude;
+        int difflat = mylat - latitude;
 
         //todo: find distnace?
+        int longSq = difflong*difflong;
+        int latSq = difflat*difflat;
+
+        distance =Math.sqrt(longSq+latSq);
+
         return distance;
     }
 }
