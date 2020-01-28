@@ -27,4 +27,9 @@ public class Hub {
 
         return distance;
     }
+
+    public void promote(User promotedUser){
+        //advirtizing functionality
+
+    }
 }
