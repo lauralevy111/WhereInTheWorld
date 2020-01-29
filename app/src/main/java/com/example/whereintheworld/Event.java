@@ -21,8 +21,8 @@ public class Event {
         reinburseAdmission();
     }
 
-    public void setHub(String hubName, int mylong, int mylat){
-        hub = new Hub(hubName, mylong, mylat);
+    public void setHub(String hubName, int mylong, int mylat, boolean active){
+        hub = new Hub(hubName, mylong, mylat,active);
 
     }
 
