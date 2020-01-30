@@ -39,4 +39,8 @@ public class User {
 
         return name;
     }
+
+    public void setProfilePicture(String linkToPicture){
+        //todo: use link to picture to get the picture and associate it with this user
+    }
 }
