@@ -21,6 +21,6 @@ public class AdminUser extends User {
     }
 
     public void announce(String message){
-//todo: announce to members of this.group
+
     }
 }

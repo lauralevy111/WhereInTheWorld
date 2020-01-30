@@ -43,4 +43,8 @@ public class User {
     public void setProfilePicture(String linkToPicture){
         //todo: use link to picture to get the picture and associate it with this user
     }
+
+    public void notification(String message){
+        //todo: send string message to user's email account
+    }
 }
