@@ -44,7 +44,10 @@ public class User {
         //todo: use link to picture to get the picture and associate it with this user
     }
 
-    public void notification(String message){
+    public void notification(String message, AdminUser admin){
         //todo: send string message to user's email account
+
+        String outMessage = "message from"+admin.getName()+": "+message;
+
     }
 }
