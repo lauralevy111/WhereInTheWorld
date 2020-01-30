@@ -8,7 +8,7 @@ public class AdminUser extends User {
     }
 
     public void createHub(String name, int longitude, int lattitude){
-        Hub newHub = new Hub (name,longitude,lattitude);
+        Hub newHub = new Hub (name,longitude,lattitude,true);
 
     }
 }
