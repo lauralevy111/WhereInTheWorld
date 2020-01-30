@@ -27,4 +27,8 @@ public class Group {
     public void addMember(User newMember) {
         members.add(newMember);
     }
+
+    public ArrayList<User> getMembers(){
+        return members;
+    }
 }
