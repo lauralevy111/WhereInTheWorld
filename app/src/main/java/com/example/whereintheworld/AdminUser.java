@@ -1,8 +1,11 @@
 package com.example.whereintheworld;
 
 public class AdminUser extends User {
-    public AdminUser(String name, String email, long adminID){
+
+    public Group group;
+    public AdminUser(String name, String email, long adminID, Group group){
         super(name,email);
+        this.group = group;
 
 
     }
