@@ -8,15 +8,17 @@ public class Event {
     private Hub hub;
     public String name;
     private Date date;
+    private AdminUser eventAdmin;
     private String address;
 
     private ArrayList<User> attendees;
 
     private Double admissionPrice;
 
-    public Event(String name, Date date){
+    public Event(String name, Date date, AdminUser eventAdmin){
         this.name = name;
         this.date = date;
+        this.eventAdmin = eventAdmin;
         chargeAdmission();
         reinburseAdmission();
     }
